@@ -1,0 +1,91 @@
+.header {
+  height: 150px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+  background: #323334;
+}
+.h_logoSec {
+  width: 1200px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  color: #fff;
+  font-family: Inter;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+}
+.logo span {
+  color: red;
+}
+
+.h_inp {
+  height: 40px;
+  width: 300px;
+}
+.h_inp input {
+  height: 100%;
+  width: 280px;
+  background: #323334;
+  color: #fff;
+  font-size: 16px;
+  padding: 0 10px;
+  font-weight: 400;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid red;
+}
+.h_inp input::placeholder {
+  color: #ffffff91;
+}
+
+.h_btns {
+  width: 1200px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  color: #fff;
+}
+.h_btns_li {
+  height: 30px;
+  background: red;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  transition: all 0.3s ease-in;
+}
+.h_btns_li:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  background: rgba(255, 0, 0, 0.644);
+}
+
+@media (max-width: 600px) {
+  .header {
+    gap: 10px;
+    padding: 5px 0;
+  }
+  .h_logoSec {
+    width: 90%;
+    min-height: 90px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .h_btns {
+    width: 90%;
+    min-height: 40px;
+    align-items: center;
+  }
+}
